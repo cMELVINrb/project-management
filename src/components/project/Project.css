@@ -1,0 +1,50 @@
+.project_container{
+  width: 60%;
+}
+
+.project_create_button_container {
+  display: flex;
+  justify-content: flex-end;
+  margin: 10px 0;
+}
+
+.project_card {
+  width: 100%;
+  margin-bottom: 20px;
+  background-color: white;
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.20);
+
+  transition: .15s ease-in-out;
+}
+
+.project_card:hover{
+  transform: scale(1.1);
+}
+
+.project_card_image {
+  width: 120px;
+  height: 120px;
+  margin: 10px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 50%;
+  background: var(--theme);
+}
+.project_card_image > img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: auto;
+  height: 100%;
+}
+.project_card_text {
+  margin: auto 0;
+  padding: 10px;
+}
+.project_card_text > table > tbody > tr > td {
+  padding-right: 20px;
+  font-size: 15px;
+}

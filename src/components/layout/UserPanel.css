@@ -1,0 +1,65 @@
+.user_panel_container {
+  height: 90%;
+  width: 30%;
+  border-radius: 15px;
+  position: fixed;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 5;
+  background-color: white;
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.20);
+  padding: 90px 30px;
+  text-align: center;
+  display: block;
+}
+
+.user_panel_circle {
+  margin: auto;
+  height: 120px;
+  width: 100%;
+  max-width: 120px !important;
+  position: relative;
+  overflow: hidden;
+  border-radius: 50%;
+  background-color: var(--theme);
+  background: var(--theme);
+}
+.user_panel_circle > img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: auto;
+  height: 100%;
+}
+
+.user_panel_data {
+  margin-top: 30px;
+  width: 100%;
+}
+
+.user_panel_projects {
+  margin: 20px;
+}
+
+.user_panel_projects > .onGoing_projects {
+  color: green;
+}
+
+.user_panel_projects > .finished_projects {
+  color: gray;
+}
+
+.user_panel_projects > .onGoing_projects > div:nth-child(1),
+.user_panel_projects > .finished_projects > div:nth-child(1) {
+  font-size: 30px;
+  font-weight: 1000;
+}
+
+.user_panel_projects > .onGoing_projects > div:nth-child(2),
+.user_panel_projects > .finished_projects > div:nth-child(2),
+.user_panel_projects > .onGoing_projects > div:nth-child(3),
+.user_panel_projects > .finished_projects > div:nth-child(3) {
+  font-size: 14px;
+  font-weight: 1000;
+}

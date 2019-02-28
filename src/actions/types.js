@@ -1,0 +1,9 @@
+export const FETCH_USER_DATA = 'FETCH_USER_DATA';
+export const FETCH_PROJECT_LIST = 'FETCH_PROJECT_LIST';
+export const FETCH_EMPLOYEE_LIST = 'FETCH_EMPLOYEE_LIST';
+
+export const CREATE_PROJECT = 'CREATE_PROJECT';
+
+
+export const NEW_POST = 'NEW_POST';
+

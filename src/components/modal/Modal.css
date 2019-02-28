@@ -1,0 +1,133 @@
+/* MAIN */
+  /* BLOCKER */
+    .project_create_modal_blocker {
+      height: 100%;
+      width: 100%;
+      background-color: rgba(0, 0, 0, 0.50);;
+      z-index: 5;
+
+      position: fixed;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+  /* CLOSE BUTTON */
+    .modal_close_button {
+      background-color: var(--theme);
+      height: 45px;
+      width: 45px;
+      padding: 0px 18px 18.5px 18px;
+      right: -22px;
+      top: -22px;
+      border: 3px white solid;
+      border-radius: 50px;
+      position: absolute;
+      outline: none;
+      z-index: 1;
+      
+      transition: .1s ease-in-out;
+    }
+
+    .modal_close_button:hover,
+    .modal_close_button:focus {
+      outline: none;
+      transform: scale(1.3)
+    }
+
+    .modal_close_button > div {
+      height: 19px;
+      width: 4px;
+      background-color: white;
+      position: absolute;
+      margin: 0 auto;
+      border-radius: 20px;
+    }
+    .modal_close_button > div:nth-child(1) {
+      transform: rotate(45deg);
+      margin: 0 auto;
+    }
+    .modal_close_button > div:nth-child(2) {
+      transform: rotate(-45deg);
+      margin: 0 auto;
+    }
+
+  /* HEADER */
+    .modal_header {
+      color: white;
+      background-color: var(--theme);
+      position: relative;
+      height: 80px;
+      width: 100%;
+      padding: 35px;
+      border-top-left-radius: 10px;
+    }
+    .modal_header > h1 {
+      margin: 0;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  /* BODY */
+    .modal_body {
+      padding: 25px 35px;
+    }
+
+    textarea {
+      height: 150px;
+    }
+
+    .submit_button, .cancel_button {
+      width: 100%;
+      border-radius: 50px;
+      border: none;
+      padding: 5px;
+      margin-right: 10px;
+      border: solid 5px var(--theme);
+      font-weight: 1000 !important;
+      outline: none;
+      margin-top:10px;
+    }
+    .submit_button:hover, .cancel_button:hover,
+    .submit_button:focus, .cancel_button:focus {
+      outline: none;
+    }
+
+    .submit_button {
+      background-color: var(--theme);
+      color: white;
+    }
+    .cancel_button {
+      background-color: white;
+      color: var(--theme);
+    }
+
+  /* CREATE PROJECT BUTTON */
+    .project_create_button {
+      padding: 5px 15px 7px 15px;
+      margin: 0;
+      outline: none;
+      border: none;
+      border-radius: 50px;
+      background-color: var(--theme);
+      color: white;
+    }
+
+    .project_create_button:hover, .project_create_button:focus {
+      outline: none;
+    }
+
+  /* CREATE MODAL */
+    .project_create_modal {
+      height: 90%;
+      width: 80%;
+      background-color: white;
+      border-radius: 10px;
+      z-index: 6;
+
+      position: fixed;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      box-shadow: 0 15px 25px rgba(0, 0, 0, 0.20);
+    }

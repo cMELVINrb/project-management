@@ -1,32 +1,75 @@
-.App {
-  text-align: center;
+/* CSS LINK */
+@import url('components/layout/Header.css');
+@import url('components/layout/UserPanel.css');
+@import url('components/modal/Modal.css');
+@import url('components/project/Project.css');
+
+/* THEME COLOR */
+:root {
+  --theme: rgba(44, 62, 80, 1);
+  --theme-faded: rgba(44, 62, 80, .5)
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-}
+/* Basic layout setup */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+} 
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
 
-.App-link {
-  color: #61dafb;
-}
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@font-face {
+  font-family: "NotoSans";
+    src: url("assets/fonts/NotoSansKR-Light.otf");
   }
-  to {
-    transform: rotate(360deg);
-  }
+
+body {
+  font-family: NotoSans !important;
+  font-size: 16px !important;
+  background-color:#dfe4ea !important; 
+}
+
+/* large Title */
+h1 { 
+  font-size: 20px !important; 
+  font-weight: 1000 !important;
+}  
+
+/* sub title */
+h2 { 
+  font-size: 19px !important; 
+  font-weight: 1000 !important;
+}
+
+h3 {
+  font-size: 15px !important; 
+}
+
+input,
+select,
+textarea { 
+  width: 100% !important;
+  padding: 6px 12px;
+  border-radius: 15px;
+  border: 1px solid rgba(0, 0, 0, 0.30);
+  margin: 8px 0px !important;
+  outline: none;
+}
+input:hover, 
+input:focus, 
+select:hover,
+select:focus,
+textarea:hover,
+textarea:focus {
+  outline: none;
+}
+
+textarea {
+  resize: none !important;
+  height: 100%;
+}
+
+.page_container{
+  padding: 0 50px;
 }
