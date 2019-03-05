@@ -33,6 +33,7 @@ export class UserPanel extends Component {
         }
       }
     );
+    
 
     return (
       <div className="user_panel_container">

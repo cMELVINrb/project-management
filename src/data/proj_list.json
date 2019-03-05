@@ -10,11 +10,18 @@
       "title": "inventory system",
       "client_email": "abc@gmail",
       "client_contact": "09123456789",
-      "manager": "camcalang",
       "description": "create an inventory system for supplies",
       "start_date": "december 1, 2019",
       "created_at": "december 1, 2019",
-      "deadline": "march 1, 2020"
+      "deadline": "march 1, 2020",
+      "manager": {
+        "id": 4,
+        "fname": "christian melvin",
+        "mname": "rodriguez",
+        "lname": "barsana",
+        "position": "Project Manager",
+        "description": "DevBox's Head Developer"
+        }
     },
 
     {
@@ -26,11 +33,18 @@
       "title": "library system",
       "client_email": "abc@gmail",
       "client_contact": "0912312339",
-      "manager": "deo sims",
       "description": "create an library system for admin",
       "start_date": "december 3, 2019",
       "created_at": "december 3, 2019",
-      "deadline": "march 11, 2020"
+      "deadline": "march 11, 2020",
+      "manager": {
+        "id": 4,
+        "fname": "christian melvin",
+        "mname": "rodriguez",
+        "lname": "barsana",
+        "position": "Project Manager",
+        "description": "DevBox's Head Developer"
+        }
     },
 
     {
@@ -42,11 +56,18 @@
       "title": "school system",
       "client_email": "abc@gmail",
       "client_contact": "09123444489",
-      "manager": "Bimby",
       "description": "create an school system for admin",
       "start_date": "november 1, 2019",
       "created_at": "november 1, 2019",
-      "deadline": "april 1, 2020"
+      "deadline": "april 1, 2020",
+      "manager": {
+        "id": 3,
+        "fname": "jake",
+        "mname": "",
+        "lname": "alla",
+        "position": "Project Manager",
+        "description": "DevBox's #1 Marketing Strategist"
+        }
     },
 
     {
@@ -58,11 +79,18 @@
       "title": "inventory system",
       "client_email": "abc@gmail",
       "client_contact": "09123456789",
-      "manager": "Kris",
       "description": "create an inventory system for supplies",
       "start_date": "january 1, 2019",
       "created_at": "january 1, 2019",
-      "deadline": "december 1, 2020"
+      "deadline": "december 1, 2020",
+      "manager": {
+        "id": 4,
+        "fname": "christian melvin",
+        "mname": "rodriguez",
+        "lname": "barsana",
+        "position": "Project Manager",
+        "description": "DevBox's Head Developer"
+        }
     },
     {
       "id": 5,
@@ -73,11 +101,18 @@
       "title": "inventory system",
       "client_email": "abc@gmail",
       "client_contact": "09123456789",
-      "manager": "Finn",
       "description": "create an inventory system for deliveries and supplies",
       "start_date": "january 1, 2019",
       "created_at": "january 1, 2019",
-      "deadline": "march 1, 2021"
+      "deadline": "march 1, 2021",
+      "manager": {
+        "id": 6,
+        "fname": "joseph",
+        "mname": "",
+        "lname": "cuerdo",
+        "position": "Software Analyst",
+        "description": "DevBox's Head Marketing Officer"
+        }
     },
     {
       "id": 6,
@@ -88,11 +123,18 @@
       "title": "gaming system",
       "client_email": "abc@gmail",
       "client_contact": "09123456789",
-      "manager": "Melvin",
       "description": "reinvent gaming site",
       "start_date": "december 1, 2019",
       "created_at": "december 1, 2019",
-      "deadline": "may 1, 2022"
+      "deadline": "may 1, 2022",
+      "manager": {
+        "id": 4,
+        "fname": "christian melvin",
+        "mname": "rodriguez",
+        "lname": "barsana",
+        "position": "Project Manager",
+        "description": "DevBox's Head Developer"
+        }
     },
     {
       "id": 7,
@@ -103,11 +145,18 @@
       "title": "inventory system",
       "client_email": "abc@gmail",
       "client_contact": "09123456789",
-      "manager": "camcalang",
       "description": "create an inventory system for supplies",
       "start_date": "december 1, 2019",
       "created_at": "december 1, 2019",
-      "deadline": "march 1, 2020"
+      "deadline": "march 1, 2020",
+      "manager": {
+        "id": 6,
+        "fname": "joseph",
+        "mname": "",
+        "lname": "cuerdo",
+        "position": "Software Analyst",
+        "description": "DevBox's Head Marketing Officer"
+        }
     },
 
     {
@@ -119,11 +168,18 @@
       "title": "library system",
       "client_email": "abc@gmail",
       "client_contact": "0912312339",
-      "manager": "deo sims",
       "description": "create an library system for admin",
       "start_date": "december 3, 2019",
       "created_at": "december 3, 2019",
-      "deadline": "march 11, 2020"
+      "deadline": "march 11, 2020",
+      "manager": {
+        "id": 6,
+        "fname": "joseph",
+        "mname": "",
+        "lname": "cuerdo",
+        "position": "Software Analyst",
+        "description": "DevBox's Head Marketing Officer"
+        }
     },
 
     {
@@ -135,11 +191,18 @@
       "title": "school system",
       "client_email": "abc@gmail",
       "client_contact": "09123444489",
-      "manager": "Bimby",
       "description": "create an school system for admin",
       "start_date": "november 1, 2019",
       "created_at": "november 1, 2019",
-      "deadline": "april 1, 2020"
+      "deadline": "april 1, 2020",
+      "manager": {
+        "id": 4,
+        "fname": "christian melvin",
+        "mname": "rodriguez",
+        "lname": "barsana",
+        "position": "Project Manager",
+        "description": "DevBox's Head Developer"
+        }
     },
 
     {
@@ -151,11 +214,18 @@
       "title": "inventory system",
       "client_email": "abc@gmail",
       "client_contact": "09123456789",
-      "manager": "Kris",
       "description": "create an inventory system for supplies",
       "start_date": "january 1, 2019",
       "created_at": "january 1, 2019",
-      "deadline": "december 1, 2020"
+      "deadline": "december 1, 2020",
+      "manager": {
+        "id": 4,
+        "fname": "christian melvin",
+        "mname": "rodriguez",
+        "lname": "barsana",
+        "position": "Project Manager",
+        "description": "DevBox's Head Developer"
+        }
     },
     {
       "id": 11,
@@ -166,11 +236,18 @@
       "title": "inventory system",
       "client_email": "abc@gmail",
       "client_contact": "09123456789",
-      "manager": "Finn",
       "description": "create an inventory system for deliveries and supplies",
       "start_date": "january 1, 2019",
       "created_at": "january 1, 2019",
-      "deadline": "march 1, 2021"
+      "deadline": "march 1, 2021",
+      "manager": {
+        "id": 4,
+        "fname": "christian melvin",
+        "mname": "rodriguez",
+        "lname": "barsana",
+        "position": "Project Manager",
+        "description": "DevBox's Head Developer"
+        }
     },
     {
       "id": 12,

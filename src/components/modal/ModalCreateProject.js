@@ -139,6 +139,7 @@ export class ModalCreateProject extends Component {
                     onChange={this.onChange}  
                   >
                     <option value="" disabled>Choose Project Manager</option>
+                    <option value="">-- None --</option>
                     {mapEmployeeList}
                   </select>
                 </div>

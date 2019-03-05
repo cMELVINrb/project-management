@@ -6,10 +6,8 @@ import { Provider } from 'react-redux';
 import store from 'store'
 
 import Project from 'components/project/Project';
-import PostForm from 'components/project/PostForm';
 import Header from 'components/layout/Header';
 import UserPanel from 'components/layout/UserPanel';
-
 
 class App extends Component {
   render() {

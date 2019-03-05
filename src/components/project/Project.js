@@ -1,8 +1,11 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
+
+import { Link } from 'react-router-dom';
+
 import { connect } from 'react-redux';  // connects your components to your redux store that was provided by the provider component
 
-import { fetchProjectList } from 'actions/postActions';             // Your action
+import { fetchProjectList, fetchProjectDetail } from 'actions/postActions';             // Your action
 import ModalCreateProjectCaller from 'components/modal/ModalCreateProjectCaller';
 
 export class Project extends Component {  
@@ -16,6 +19,10 @@ export class Project extends Component {
     }
   } 
 
+  viewProjectDetail = (projectId) => () => {  // does not run the function right away, waits for it to be called, fixed bug of calling the function right away
+    this.props.fetchProjectDetail(projectId);
+  }
+
   static defaultProps = {
     data: []
   }
@@ -25,15 +32,13 @@ export class Project extends Component {
     newProject: PropTypes.object
   }
 
-  
-  render() {
-   
-    console.log(this.props.projectList)
-
-    const postItems = this.props.projectList.data.map(project => (         
-      <div  className="project_card row"  key={ project.id }>
+  render() { 
+    const currentUrl = window.location.href;
+    var id = "";
+    const postItems = this.props.projectList.data.map(project => (  
+      <div  className="project_card row"  key={ project.id } onClick={this.viewProjectDetail(project.id)}>
         <div className="project_card_image">
-          <img src={project.picture} />                                  
+          <img src={project.picture} ref="" alt=""  />                                  
         </div>
         <div className="project_card_text">
           <h1>{ project.title }</h1>
@@ -43,9 +48,8 @@ export class Project extends Component {
                 <td><h3>Project Manager</h3></td>
                 <td><h3>:</h3></td>
                 <td><h3>
-                {project.manager === null ? 'no project manager assigned' : project.manager.fname}
-                  
-                  </h3></td>
+                  {project.manager == null ? 'no project manager assigned' : project.manager.fname}
+                </h3></td> 
               </tr>
               <tr>
                 <td><h3>Company</h3></td>
@@ -62,6 +66,8 @@ export class Project extends Component {
         </div>
       </div>
 
+
+
     ));
 
     return (
@@ -70,7 +76,9 @@ export class Project extends Component {
           <ModalCreateProjectCaller />
         </div>
         {postItems}
+
       </div>
+
     )
   }
 }
@@ -81,4 +89,23 @@ const mapStateToProps = state => ({                           // takes the state
   newProject: state.posts.project
 });
 
-export default connect(mapStateToProps, { fetchProjectList })(Project);
+export default connect(mapStateToProps, { fetchProjectList, fetchProjectDetail })(Project);
+
+/* <table>
+  <tbody>
+    {this.props.projectList.data.map(project => (
+      <tr key={project.id} className="project_card">
+        <td className="project_card_image" >
+          <img src={project.picture} ref="" alt=""/>
+        </td>
+
+        <td>
+          <h1>{ project.title }</h1>
+          <h3>Project Manager : { project.manager == null ? 'no project manager assigned' : project.manager.fname}</h3>
+          <h3>Company : { project.client_company }</h3>
+          <h3>Deadline : { project.deadline }</h3>  
+        </td>
+      </tr>
+    ))}
+  </tbody>
+</table> */

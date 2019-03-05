@@ -3,8 +3,9 @@ import {
   FETCH_USER_DATA,
   FETCH_PROJECT_LIST,
   FETCH_EMPLOYEE_LIST,
-  CREATE_PROJECT, 
-  NEW_POST } from 'actions/types';
+  CREATE_PROJECT,
+  FETCH_PROJECT_DETAIL
+} from 'actions/types';
 
 const initialState = {                                              // Represents the post that come in from action which contains the fetch requests
   userData: {
@@ -15,7 +16,7 @@ const initialState = {                                              // Represent
   },
   employeeList: [],
   project: {},
-  item: {}
+  projectDetail: {}
 }
 
 export default function(state = initialState, action) {    // evaluates what type that we are dealing with
@@ -44,10 +45,10 @@ export default function(state = initialState, action) {    // evaluates what typ
         project: action.payload
       };
     }
-    case NEW_POST: {
-      return {                                             
+    case FETCH_PROJECT_DETAIL: {
+      return {
         ...state,
-        item: action.payload                              
+        projectDetail: action.payload
       };
     }
     default: {
